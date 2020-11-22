@@ -22,37 +22,30 @@
             href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;900&family=Source+Sans+Pro:wght@300;900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
 
         <script type="text/javascript" src="http://livejs.com/live.js"></script>
     </head>
     <body>
-        <!-- <header>
-            <div class="logo">
-                <img src="" alt="" />
-            </div>
+        <!-- Naviagation bar -->
+        <div class="all-nav">
+            <nav>
+                <div class="logo">
+                    <h4>Minkyu Song</h4>
+                </div>
 
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#services" class="nav__link">What I do</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#about-me" class="nav__link">My Projects</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="a" class="nav__link">Contact</a>
-                    </li>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">My Projects</a></li>
+                    <li><a href="#">Photos</a></li>
                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
             </nav>
-        </header> -->
-
+        </div>
         <!-- Introduction  -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
@@ -63,7 +56,7 @@
             </p>
             <img
                 class="intro__img"
-                src="images/my_main_pic.jpeg"
+                src="../images/my_main_pic.jpeg"
                 alt="A picture of me"
             />
         </section>
@@ -84,12 +77,27 @@
                     </p>
                 </div>
                 <div class="about-me__vertical-menu">
-                    <ul>
-                        <li>Hello</li>
-                        <li>HI</li>
-                        <li>Yo</li>
-                        <li>Suh</li>
-                    </ul>
+                    <div
+                        class="vertical-menu-item"
+                        onclick="window.open('https://www.linkedin.com/in/minkyusong/','mywindow');"
+                    >
+                        <i class="fab fa-linkedin icon"></i> LinkedIn
+                    </div>
+                    <div
+                        class="vertical-menu-item"
+                        onclick="window.open('https://github.com/smkjason','mywindow');"
+                    >
+                        <i class="fab fa-github-square icon"></i> GitHub
+                    </div>
+                    <div class="vertical-menu-item" onclick="sendEmail();">
+                        <i class="fas fa-envelope-square icon"></i> Email
+                    </div>
+                    <div
+                        class="vertical-menu-item"
+                        onclick="window.open('https://www.instagram.com/smkjason/','mywindow');"
+                    >
+                        <i class="fab fa-instagram-square icon"></i>Instagram
+                    </div>
                 </div>
             </div>
 
@@ -97,24 +105,31 @@
         </section>
 
         <!-- Footer -->
-        <footer>
-            <a href="mailto:minkyu.song@outlookcom" class="footer-link"
-                >minkyu.song@outlook.com</a
-            >
+        <footer class="footer">
+            <p>Minkyu Song</p>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="">a</a>
+                    <a class="social-list__link" href=""
+                        ><i class="fab fa-github"></i
+                    ></a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="">b</a>
+                    <a class="social-list__link" href=""
+                        ><i class="fab fa-linkedin-in"></i
+                    ></a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="">c</a>
+                    <a class="social-list__link" href=""
+                        ><i class="far fa-envelope"></i
+                    ></a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="">d</a>
+                    <a class="social-list__link" href=""
+                        ><i class="fab fa-instagram"></i
+                    ></a>
                 </li>
             </ul>
         </footer>
     </body>
+    <script src="../js/script.js" type="text/javascript"></script>
 </html>
