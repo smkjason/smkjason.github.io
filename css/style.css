@@ -116,7 +116,6 @@ strong {
     font-weight: var(--fw-reg);
 }
 
-
 /* Nav Bar */
 
 .all-nav {
@@ -278,7 +277,6 @@ nav {
     width: 100px;
     height: 100px;
 }
-
 
 .border {
     border-style: solid;
