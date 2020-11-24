@@ -266,6 +266,7 @@ nav {
     line-height: 1.25;
     text-align: center;
     color: #aaa;
+    margin-top: 10px;
 }
 
 /* Picture Cropper */
@@ -460,12 +461,36 @@ nav {
 
     overflow: auto;
     margin-bottom: 35px;
-    max-width: 50%;
+    width: 50%;
 }
 
 .card-image {
     grid-area: image;
     background: url(/images/temp-project-pic.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.first-card {
+    grid-area: image;
+    background: url(/images/temp-project-pic.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.second-card {
+    grid-area: image;
+    background: url("https://miro.medium.com/max/3840/1*TI9stR8GD9SF0B20kigyvA.jpeg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.third-card {
+    grid-area: image;
+    background: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/hbz-shampoo-index-1572638865.jpg");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
