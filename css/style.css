@@ -474,7 +474,7 @@ nav {
 
 .first-card {
     grid-area: image;
-    background: url(/images/temp-project-pic.jpg);
+    background: url("https://fenzodigital.com/wp-content/uploads/2018/08/Mobile-App.png");
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     background-size: cover;
