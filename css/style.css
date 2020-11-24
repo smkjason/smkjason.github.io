@@ -381,7 +381,7 @@ nav {
 /* Footer */
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     border-top: 0.5px solid #c4c4c4;
