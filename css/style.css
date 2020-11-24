@@ -18,6 +18,7 @@
     --clr-dark: #303030;
     --clr-accent: #0cb7c3;
     --clr-hover: #009912;
+    --clr-highlight: rgb(255, 7, 110);
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -313,8 +314,10 @@ nav {
     justify-content: center;
     max-width: 80%;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 70px auto;
+    grid-row-gap: 20px;
     position: relative;
+    overflow: auto;
 }
 
 .section__title--about {
@@ -381,8 +384,8 @@ nav {
 /* Footer */
 
 .footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
+    bottom: 0px;
     width: 100%;
     border-top: 0.5px solid #c4c4c4;
     background: var(--clr-main-light);
@@ -425,4 +428,96 @@ nav {
 
 .social-list__link:hover {
     color: var(--clr-hover);
+}
+
+/* My Projects */
+
+.projects {
+    width: 100vw;
+    max-width: 2000px;
+    margin-top: 35px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Cards */
+
+.project-card {
+    display: grid;
+
+    grid-template-rows: 210px 210px 80px;
+    grid-template-areas: "image" "text" "techs";
+
+    /* font-family: roboto; */
+    border-radius: 18px;
+    background: var(--clr-main-light);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    text-align: center;
+
+    overflow: auto;
+    margin-bottom: 35px;
+    max-width: 50%;
+}
+
+.card-image {
+    grid-area: image;
+    background: url(/images/temp-project-pic.jpg);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+}
+
+.card-text .date {
+    color: var(--clr-highlight);
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-text p {
+    color: grey;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-techs {
+    grid-area: techs;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tech-item {
+    display: inline;
+    min-height: 50px;
+    width: auto;
+    max-width: 80px;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.mongodb {
+    padding-top: 6px;
+}
+
+.nodejs {
+    padding-right: 7px;
+}
+
+.tech-item .tech-image {
+    display: block;
+    margin: 0 auto;
 }
